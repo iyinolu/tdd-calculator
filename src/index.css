@@ -28,6 +28,7 @@
   --submit-key-color-hover: #aa6e00;
   --key-text-weight: 700;
   --key-text-size: 3em;
+  --key-text-color: #d3d3d3;
 }
 
 @media screen and (max-width: 1024px) {
