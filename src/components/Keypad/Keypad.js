@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Key from "../Key/Key";
+import "../../styles/Keypad.css"
 
 const Keypad = ({
   callOperator,
@@ -8,7 +10,16 @@ const Keypad = ({
   setOperator,
   updateDisplay,
 }) => {
-  return <div className="keypad-container"></div>;
+  const renderValues = (values) =>
+    values.map((number, key) => <p key={key}>{number}</p>);
+
+  return (
+    <div className="keypad-container">
+      <div className="numbers-container">{renderValues(numbers)}</div>
+      <div className="operators-container">{renderValues(operators)}</div>
+      <Key />
+    </div>
+  );
 };
 
 Keypad.propTypes = {
