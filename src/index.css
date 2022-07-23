@@ -1,6 +1,7 @@
 :root {
   /* font */
   --main-font: 'Orbitron', sans-serif;
+  --body-background: antiquewhite;
 
   /* Calculator Variables */
   --calculator-bg-color: #696969;
@@ -39,6 +40,9 @@
     --display-text-size: 6em;
     --key-text-size: 6em;
   }
+}
+body {
+  background-color: var(--body-background);
 }
 
 body, div, p {
